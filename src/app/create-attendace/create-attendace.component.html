@@ -1,0 +1,62 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <!-- <h3 class="pt-5 text-center">Employee Attendace</h3>
+            <form #myForm="ngForm" class="pt-3 text-center">
+                Date : <input type="date" name="date" id="" ngModel>
+                <input type="text" name="ids">
+                <input type="text" name="name">
+                <input type="text" name="designation">
+                <input type="text" name="email">
+                <input type="text" name="contact">
+                <input type="text" name="eDate">
+                <button class="btn btn-primary" (click)="createAttendace(myForm.value)">Submit</button>
+            </form> -->
+        <br><br>
+            <h3 class="pt-5 text-center">Attendace  Report</h3>
+            <table class="table table-bordered text-center">
+                <thead class="thead-dark">
+                    <tr>
+                        <td scope="col">#</td>
+                        <td scope="col">Name</td>
+                        <td scope="col">Designation</td>
+                        <td scope="col">Email</td>
+                        <td scope="col">Contact</td>
+                        <td scope="col">Date</td>
+                        <td scope="col">Action</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let att of getAttendace">
+                        <td scope="col"><div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultChecked2" >
+                            <label class="custom-control-label" for="defaultChecked2"></label>
+                          </div></td>
+                        <!-- <td>{{att.sameadr}}</td> -->
+                        <td>{{att.name}}</td>
+                        <td>{{att.designation}}</td>
+                        <td>{{att.email}}</td>
+                        <td>{{att.contact}}</td>
+                        <td>{{currDate}}</td>
+                        <td>
+                            <button class="btn btn-primary" (click)="presentEmp(att)" >Present</button>
+                            <button class="btn btn-danger" (click)="absentEmp(att)">absent</button>
+                        </td>
+                        <td>
+                            <form #hiddenForm="ngForm">
+                                <input type="hidden" value="{{att.name}}" name="name" [(ngModel)]="presentObj.name">
+                                <input type="hidden" value="{{att.name}}" name="designation" [(ngModel)]="presentObj.designation">
+                                <input type="hidden" value="{{att.name}}" name="email" [(ngModel)]="presentObj.email">
+                                <input type="hidden" value="{{att.name}}" name="contact" [(ngModel)]="presentObj.contact">
+                                <input type="hidden" value="{{att.name}}" name="date" [(ngModel)]="presentObj.date">  
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</div>
+

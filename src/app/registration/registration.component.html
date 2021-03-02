@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4">
+
+    </div>
+    <div class="col-4">
+      <h1>Registration</h1>
+      <form #formRegistration="ngForm" (ngSubmit) ="rigisterUser(formRegistration.value)" >
+        Name: <input class="input-group" type="text" name="name" id="" ngModel><br>
+        Email: <input class="input-group" type="text" name="email" id="" ngModel><br>
+        Password: <input class="input-group" type="text" name="password" id="" ngModel><br>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      <!-- <form action="">
+        Name :<input class="input-group" type="text" name="" id=""> <br>
+        Email: <input class="input-group" type="text" name="" id=""><br>
+        Password: <input class="input-group" type="text" name="" id=""><br>  -->
+     
+      
+      </form>
+    </div>
+    <div class="col-4">
+    </div>
+  </div>
+
+</div>

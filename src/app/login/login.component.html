@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4">
+    </div>
+    <div class="col-4">
+      <h1>Welcome <br/> Login My Website</h1>
+      <form #formLogin="ngForm" (ngSubmit) ="loginUser(formLogin.value)" >
+        Email: <input class="input-group" type="text" name="email" id="" ngModel><br>
+        Password: <input class="input-group" type="text" name="password" id="" ngModel><br>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+    </div>
+    <div class="col-4">
+    </div>
+  </div>
+</div>
+
+
+

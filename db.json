@@ -1,0 +1,186 @@
+{
+  "employees": [
+    {
+      "name": "Romana Afroz",
+      "fname": "hashem",
+      "mname": "sufiya",
+      "gender": "female",
+      "dob": "2020-12-10",
+      "email": "romana151992@gmail.com",
+      "contact": "01781889748",
+      "designation": "officer",
+      "department": "Accounting",
+      "equalification": "master's",
+      "address": "titas, cumilla",
+      "id": 1
+    },
+    {
+      "name": "Romana",
+      "fname": "abir",
+      "mname": "naju",
+      "gender": "female",
+      "dob": "2020-12-24",
+      "email": "romana151992@gmail.com",
+      "contact": "01781889748",
+      "designation": "officer",
+      "department": "Accounting",
+      "equalification": "master's",
+      "address": "titas, cumilla",
+      "id": 3
+    },
+    {
+      "name": "Rafiq",
+      "fname": "Shameen",
+      "mname": "Rahi",
+      "gender": "male",
+      "dob": "2020-11-17",
+      "email": "rahi876@gmail.com",
+      "contact": "0178667755",
+      "designation": "Manager",
+      "department": "a",
+      "equalification": "",
+      "address": "",
+      "id": 4
+    },
+    {
+      "name": "Rafiq",
+      "fname": "Shameen",
+      "mname": "Rahi",
+      "gender": "male",
+      "dob": "2020-11-17",
+      "email": "rahi876@gmail.com",
+      "contact": "0178667755",
+      "designation": "Manager",
+      "department": "Accounting",
+      "equalification": "BBA",
+      "address": "Laksam",
+      "id": 5
+    },
+    {
+      "name": "Jannatul Mawoa",
+      "fname": "Humayun Kabir",
+      "mname": "Asma",
+      "gender": "female",
+      "dob": "2020-12-30",
+      "email": "naju45@gmail.com",
+      "contact": "01717784198",
+      "designation": "Assistant Offier",
+      "department": "Financ",
+      "equalification": "B.B.A",
+      "address": "Sylet",
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    }
+  ],
+  "emp_attendance": [
+    {
+      "name": "Romana Afroz",
+      "designation": "officer",
+      "email": "romana151992@gmail.com",
+      "contact": "01781889748",
+      "status": "Present",
+      "date": "Tue Dec 08 2020 23:49:54 GMT+0600 (Bangladesh Standard Time)",
+      "id": 1
+    },
+    {
+      "name": "Romana",
+      "designation": "officer",
+      "email": "romana151992@gmail.com",
+      "contact": "01781889748",
+      "status": "Absent",
+      "date": "Tue Dec 08 2020 23:50:32 GMT+0600 (Bangladesh Standard Time)",
+      "id": 2
+    },
+    {
+      "name": "Rafiq",
+      "designation": "Manager",
+      "email": "rahi876@gmail.com",
+      "contact": "0178667755",
+      "status": "Present",
+      "date": "Wed Dec 09 2020 09:57:17 GMT+0600 (Bangladesh Standard Time)",
+      "id": 3
+    },
+    {
+      "name": "Romana Afroz",
+      "designation": "officer",
+      "email": "romana151992@gmail.com",
+      "contact": "01781889748",
+      "status": "Present",
+      "date": "Wed Dec 09 2020 10:04:59 GMT+0600 (Bangladesh Standard Time)",
+      "id": 4
+    },
+    {
+      "name": "Rafiq",
+      "designation": "Manager",
+      "email": "rahi876@gmail.com",
+      "contact": "0178667755",
+      "status": "Absent",
+      "date": "Wed Dec 09 2020 10:27:04 GMT+0600 (Bangladesh Standard Time)",
+      "id": 5
+    },
+    {
+      "name": "Romana",
+      "designation": "officer",
+      "email": "romana151992@gmail.com",
+      "contact": "01781889748",
+      "status": "Absent",
+      "date": "Wed Dec 09 2020 10:46:40 GMT+0600 (Bangladesh Standard Time)",
+      "id": 6
+    },
+    {
+      "name": "Jannatul Mawoa",
+      "designation": "Assistant Offier",
+      "email": "naju45@gmail.com",
+      "contact": "01717784198",
+      "status": "Present",
+      "date": "Wed Dec 09 2020 11:48:54 GMT+0600 (Bangladesh Standard Time)",
+      "id": 7
+    }
+  ],
+  "pay_Salary": [],
+  "attendaces": [],
+  "salaries": [
+    {
+      "month": "March",
+      "salary": "569",
+      "id": 2
+    },
+    {
+      "month": "September",
+      "salary": "98765",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "name": "Romana Afroz",
+      "email": "romana151992@gmail.com",
+      "password": "111",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

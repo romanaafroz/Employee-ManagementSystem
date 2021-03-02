@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="alo">
+    <div class="row mt-5">
+      <div class="col-3 p-lg-5 ">
+        <button [routerLink]="['/adminNav/createEmployee']" type="button"
+          class="btn btn-outline-info btn-lg btn-block">Employee</button>
+        <button [routerLink]="['/adminNav/attendence']" type="button"
+          class="btn btn btn-outline-primary btn-lg btn-block">Attendance</button>
+        <button [routerLink]="['/adminNav/attendenceReport']" type="button"
+          class="btn btn btn-outline-primary btn-lg btn-block">Attendence Report</button>
+        <button [routerLink]="['/adminNav/Salary']" type="button"
+          class="btn btn-outline-info btn-lg btn-block">Payroll</button>
+        <button [routerLink]="['/adminNav/payroll']" type="button" class="btn btn-outline-info btn-lg btn-block">Payroll
+          Report</button>
+        <button [routerLink]="['/adminNav/employeeReport']" type="button"
+          class="btn btn btn-outline-primary btn-lg btn-block">Employee Report</button>
+      </div>
+      <div class="col-9">
+        <router-outlet>
+
+        </router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

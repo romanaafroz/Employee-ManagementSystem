@@ -1,0 +1,71 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="pt-5 text-center">Employee Salary</h3>
+            <form #myForm="ngForm" class="pt-3 text-center">
+                Month : <select class="pt-10 mx-5" name="months" id="" ngModel>
+                    <optgroup>
+                        <option value="" disabled selected>Select your month</option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </optgroup>
+                </select>
+                Salary: <input class="ml-5" type="text" name="salary" id="" ngModel>
+                <button class="btn btn-primary" (click)="createSalarye(myForm.value)">Submit</button>
+            </form>
+       <br><br>
+            <h3 class="pt-5 text-center">Employee Salary Report</h3>
+            <table class="table table-bordered text-center">
+                <thead class="thead-dark">
+                    <tr>
+                        <td scope="col">Id</td>
+                        <td scope="col">Name</td>
+                        <td scope="col">Designation</td>
+                        <td scope="col">Email</td>
+                        <td scope="col">Contact</td>
+                        <td scope="col">Month</td>
+                        <td scope="col">Salary</td>
+                        <td scope="col">Action</td>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let sal of getSalary">
+                        <td>{{sal.id}}</td>
+                        <td>{{sal.name}}</td>
+                        <td>{{sal.designation}}</td>
+                        <td>{{sal.email}}</td>
+                        <td>{{sal.contact}}</td>
+                        <td>{{sal.months}}</td>
+                        <td>{{sal.salary}}</td>
+                        <button class="btn btn-primary" (click)="salaryObj(sal)">Pay</button>
+                    
+                    <td>
+                        <form #hiddenForm="ngForm">
+                            <input type="hidden" value="{{sal.name}}" name="name" [(ngModel)]="salaryObj.name">
+                            <input type="hidden" value="{{sal.name}}" name="designation" [(ngModel)]="salaryObj.designation">
+                            <input type="hidden" value="{{sal.name}}" name="email" [(ngModel)]="salaryObj.email">
+                            <input type="hidden" value="{{sal.name}}" name="contact" [(ngModel)]="salaryObj.contact">
+                            <input type="hidden" value="{{sal.name}}" name="months" [(ngModel)]="salaryObj.months">
+                            <input type="hidden" value="{{sal.name}}" name="salary" [(ngModel)]="salaryObj.salary">
+                            
+
+                        </form>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

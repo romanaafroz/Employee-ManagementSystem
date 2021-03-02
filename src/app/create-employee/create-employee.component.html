@@ -1,0 +1,27 @@
+
+<h3 class="pt-5 text-center">Add Employee</h3>
+<form #myForm="ngForm" class="pt-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                Name :<input class="input-group" type="text" name="name" id="" ngModel> <br>
+                Father's Name :<input class="input-group" type="text" name="fname" id="" ngModel> <br>
+                Mother's Name :<input class="input-group" type="text" name="mname" id="" ngModel> <br>
+                Gender: <input class="ml-5 inline" type="radio" name="gender" value="male" ngModel> Male
+                <input type="radio" class="inline" name="gender" value="female" ngModel> Female <br />
+                D/O/B : <input class="input-group" type="date" name="dob" ngModel><br>
+                Email : <input class="input-group" type="text" name="email" id="" ngModel><br>
+            </div>
+            <div class="col-6">
+                
+                Contact: <input class="input-group" type="text" name="contact" id="" ngModel><br>
+                Designation: <input class="input-group" type="text" name="designation" id="" ngModel><br>
+                Department: <input class="input-group" type="text" name="department" id="" ngModel><br>
+                Educational Qualification: <input class="input-group" type="text" name="equalification" id=""
+                    ngModel><br>
+                Address: <input class="input-group" type="text" name="address" id="" ngModel><br>
+                <button class="btn btn-primary" (click)="createEmployee(myForm.value)">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>

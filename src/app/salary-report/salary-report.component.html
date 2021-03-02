@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+    </div>
+
+    <div class="col-8">
+      <h3 class="pt-5 text-center">Employee Salary Report</h3>
+      <table class="table table-bordered text-center">
+          <thead class="thead-dark">
+              <tr>
+                  <td scope="col">Id</td>
+                  <td scope="col">Name</td>
+                  <td scope="col">Designation</td>
+                  <td scope="col">Email</td>
+                  <td scope="col">Contact</td>
+                  <td scope="col">Month</td>
+                  <td scope="col">Salary</td>
+                  <td scope="col">Status</td>
+                  
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let rep of getReport">
+                  <td>{{rep.id}}</td>
+                  <td>{{rep.name}}</td>
+                  <td>{{rep.designation}}</td>
+                  <td>{{rep.email}}</td>
+                  <td>{{rep.contact}}</td>
+                  <td>{{rep.months}}</td>
+                  <td>{{rep.salary}}</td>
+                  <td>{{rep.status}}</td>
+                  <!-- <button class="btn btn-primary" (click)="createSalarye(myForm.value)">Pay</button> -->
+              </tr>
+          </tbody>
+      </table>
+  </div>
+    <div class="col-2">
+    </div>
+  </div>
+</div>

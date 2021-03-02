@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col-10">
+      <h3>Employee List</h3>
+      <table class="table table-bordered text-center">
+        <thead class="thead-dark">
+          <tr>
+            <td scope="col">Id</td>
+            <td scope="col">Name</td>
+            <td scope="col">Father's Name</td>
+            <td scope="col">Mother's Name</td>
+            <td scope="col">Gender</td>
+            <td scope="col">D/O/B</td>
+            <td scope="col">Email</td>
+            <td scope="col">Contact</td>
+            <td scope="col">Designation</td>
+            <td scope="col">Depart</td>
+            <td scope="col">E/Q</td>
+            <td scope="col">Address</td>
+            <!-- <td scope="col">Status</td>
+            <td scope="col">Salary</td> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let emp of getEmployee">
+                  <td>{{emp.id}}</td>
+                  <td>{{emp.name}}</td>
+                  <td>{{emp.fname}}</td>
+                  <td>{{emp.mname}}</td>
+                  <td>{{emp.gender}}</td>
+                  <td>{{emp.dob}}</td>
+                  <td>{{emp.email}}</td>
+                  <td>{{emp.contact}}</td>
+                  <td>{{emp.designation}}</td>
+                  <td>{{emp.department}}</td>
+                  <td>{{emp.equalification}}</td>
+                  <td>{{emp.address}}</td>
+                  <!-- <td>{{emp.status}}</td>
+                  <td>{{emp.salary}}</td> -->
+              </tr>
+        </tbody>
+      </table>
+
+    </div>
+    <div class="col-2"></div>
+  </div>
+</div>

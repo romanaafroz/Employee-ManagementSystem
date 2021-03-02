@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-2">
+  
+      </div>
+      <div class="col-8">
+        <h3 class="pt-5 text-center">Attendace Report</h3>
+        <table class="table table-bordered text-center">
+          <thead class="thead-dark">
+            <tr>
+              <td scope="col">#Id</td>
+              <td scope="col">Name</td>
+              <td scope="col">Designation</td>
+              <td scope="col">Email</td>
+              <td scope="col">Contact</td>
+              <td scope="col">Month</td>
+              <td scope="col">Salary</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let att of getAttendace">
+              <td>{{att.id}}</td>
+              <td>{{att.name}}</td>
+              <td>{{att.designation}}</td>
+              <td>{{att.email}}</td>
+              <td>{{att.contact}}</td>
+              <td>{{att.date}}</td>
+              <td>
+                <button class="btn btn-primary" (click)="createAttendace(myForm.value)">Present</button>
+                <button class="btn btn-danger" (click)="createAttendace(myForm.value)">absent</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-2">
+      </div>
+    </div>
+  </div>
